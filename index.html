@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <!-- Linking External CSS File For Styling -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Linking additional/custom styles, like responsiveness styling -->
+  <link rel="stylesheet" href="main.css">
+
+  <!-- Linking JavaScript file to add interactivity like menu toggles, animations, etc. -->
+  <script src="script.js" defer></script>
+
+  <!-- Linking Font Awesome for Icon usage -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Linking GSAP For Advanced Animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+</head>
+
+
+<!-- BODY SECTION START   -->
+<!-- - Contains all the visible content of the Webpage.   -->
+
+<body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <h1 class="loader-text">Loading...</h1>
+  </div>
+  <!-- ======================  NAVIGATION BAR SECTION =========================== -->
+  <nav class="navbar">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="Images/logo.webp" alt="Logo" />
+    </div>
+    <!-- Navigation Links -->
+    <ul class="nav-links">
+      <li>
+        <a href="#"><span></span>Home</a>
+      </li>
+      <li>
+        <a href="#"><span></span>About</a>
+      </li>
+      <li>
+        <a href="#"><span></span>Experience</a>
+      </li>
+      <li>
+        <a href="#"><span></span>Services</a>
+      </li>
+      <li>
+        <a href="#"><span></span>Contact</a>
+      </li>
+    </ul>
+    <!-- Buttons -->
+    <div class="nav-buttons">
+      <button class="btn creative"><span>Portfolio</span></button>
+      <button class="btn highlight"><span>Hire Me</span></button>
+    </div>
+    <div class="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+
+  <!-- ============================ HOME SECTION   ===================================== -->
+  <!-- - This section is the first impression of the website. -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1>Hi, I'm Esha</h1>
+      <h2>A Full Stack Developer</h2>
+      <p>
+        Passionate about building creative, high-performance, and
+        user-friendly web applications with the latest technologies.
+      </p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+    <div class="home-image">
+      <img src="Images/img.jpg" alt="Developer Image" />
+    </div>
+  </section>
+  <!-- ======= SIDE ICON NAVBAR ============ -->
+  <nav class="side-icon-navbar">
+    <a href="#about" class="side-nav-icon" data-title="About"><i class="fas fa-user"></i></a>
+    <a href="#experience" class="side-nav-icon" data-title="Experience"><i class="fas fa-briefcase"></i></a>
+    <a href="#achievements" class="side-nav-icon" data-title="Achievements"><i class="fas fa-trophy"></i></a>
+    <a href="#services" class="side-nav-icon" data-title="Services"><i class="fas fa-cogs"></i></a>
+    <a href="#contact" class="side-nav-icon" data-title="Contact"><i class="fas fa-envelope"></i></a>
+  </nav>
+
+  <!-- ================================= ABOUT SECTION   ======================================= -->
+  <!-- Designed to provide a personal and professional touch. -->
+  <section class="about" id="about">
+    <div class="black-theme">
+      <div class="container">
+        <div class="card">
+          <div class="card__top">
+            <img src="Images/about.jpg" alt="Sky">
+            <div class="profile__photo">
+              <img src="Images/image.jpg" alt="Profile Photo">
+            </div>
+          </div>
+          <div class="card__content">
+            <h2>Esha_Sajid</h2>
+            <h3>( Web Developer )</h3>
+            <p><span><i class="fas fa-map-marker-alt"></i></span>Zahir Pir, Pakistan</p>
+            <p><span><i class="far fa-building"></i></span>Esha's Developer Studio</p>
+            <p><span><i class="far fa-envelope"></i></span><a href="#">eshadev25@gmail.com</a></p>
+            <a href="#" class="button">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about-content">
+      <h2>About Me</h2>
+      <p>
+        I'm a passionate Full Stack Developer with expertise in Front-End and
+        Back-End technologies. I love crafting interactive, dynamic, and
+        scalable web applications that provide seamless user experiences.
+      </p>
+      <p>
+        With a deep understanding of modern web development tools, I
+        specialize in creating responsive, high-performance, and visually
+        appealing websites that leave a lasting impact.
+      </p>
+      <div class="about-buttons">
+        <button class="bttn">Download CV</button>
+        <button class="bttn highlight"><a style="text-decoration: none; color:white" href="#contact">Hire Me
+          </a></button>
+      </div>
+    </div>
+  </section>
+  <!-- =========================== EDUCATION SECTION ========================== -->
+  <!-- Includes degree names, institutions, and years of study. -->
+  <section class="education" id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="edu-container">
+      <div class="edu-card">
+        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+        <h3>Matric degree - Secondary School</h3>
+        <span>2019 - 2020 | New Missali School</span>
+        <p>
+          I have done my Matric degree from New Missali Secondary
+          School, Zahir pir. I done matric in medical field.
+        </p>
+      </div>
+      <div class="edu-card">
+        <div class="edu-icon"><i class="fas fa-code"></i></div>
+        <h3>Intermediate - MBI College</h3>
+        <span>2021 - 2022 | Intermediate degree from MBI College</span>
+        <p>
+          I have done my Intermediate degree from MBI College , Zahir
+          pir. I done matric in Pure ICS Field.
+        </p>
+      </div>
+      <div class="edu-card">
+        <div class="edu-icon"><i class="fas fa-laptop-code"></i></div>
+        <h3>Web Dev Deploma - THE ACE</h3>
+        <span>2023 - 2024 |Web Developer From The ACE Academy </span>
+        <p>
+          I have done my Web Developer From The ACE Academy , Zahir pir.
+          I done web developer as a full stack developer.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= EXPERIENCE SECTION ================================= -->
+  <!-- Emphasizes clarity and visual hierarchy for job details. -->
+  <section class="experience-skills" id="experience">
+    <div class="experience">
+      <h2 class="section-title">My Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="dot"></div>
+          <div class="content">
+            <h3>Web Development - THE SKILLS</h3>
+            <span>2022 - Present</span>
+            <p>
+              From 2022 December to end 2023 I worked as a mentor in the ACE
+              ACADEMY of web development. I trained and certified 20+
+              Students.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="dot"></div>
+          <div class="content">
+            <h3>Web Development - THE ACE</h3>
+            <span>2023 - present</span>
+            <p>
+              From jul 2023 to sep 2023, I worked as a fresh inernee web
+              developer in the ACE and I worked on awesome projects with my
+              seniors and I learn a lot.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="dot"></div>
+          <div class="content">
+            <h3>Web Development - THE ACE</h3>
+            <span>2024 - Present</span>
+            <p>
+              From end 2023 , I am working in THE ACE SOFTWARE HOUSE. I have
+              Professional skills in MERN Stack and I can create awesome
+              Projects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ============= SKILLS ============= -->
+    <!-- Includes categorized skills (Frontend, Backend, Tools, etc.).  -->
+    <section class="skills">
+      <h2 class="section-title">My Skills</h2>
+      <div class="skills-container">
+        <div class="frontend-skills">
+          <h3>Frontend</h3>
+          <div class="skill">
+            <span>HTM5L</span>
+            <div class="progress-bar">
+              <div class="progress" style="width:100%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>CSS3</span>
+            <div class="progress-bar">
+              <div class="progress" style="width:95%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>JavaScript ES6</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>React.js</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 80%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>React Hooks</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 70%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>TailwindCSS</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 95%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Bootstrap</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 90%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="backend-skills">
+          <h3>Backend</h3>
+          <div class="skill">
+            <span>MongoDB</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Node.js</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 75%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Mongoose ODM</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 70%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Express.js</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 80%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Application Programming Interface (API)</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 65%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>SQL</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 70%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>JSON Web Token (JWT)</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 70%"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="tools">
+        <h3>Tools</h3>
+        <div class="skill">
+          <span>VS Code</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 90%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Git</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 85%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>GitHub</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 80%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Postman</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 80%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================  ACHIEVEMENTS SECTION ============================== -->
+    <!-- Includes awards, certifications, milestones, and notable projects.   -->
+    <section id="achievements">
+      <h2 class="section-title">My Achievements</h2>
+      <div class="achievements-container">
+        <div class="achievement-card">
+          <div class="icon"><i class="fas fa-trophy"></i></div>
+          <h3>Best Developer Award</h3>
+          <p>Received the "Best Developer" award for outstanding performance and creativity in web development.</p>
+        </div>
+        <div class="achievement-card">
+          <div class="icon"><i class="fas fa-code"></i></div>
+          <h3>20+ Projects Completed</h3>
+          <p>Successfully completed over 20 web development projects with excellent client satisfaction.</p>
+        </div>
+        <div class="achievement-card">
+          <div class="icon"><i class="fas fa-users"></i></div>
+          <h3>5K+ Community Members</h3>
+          <p>Built an online community of over 5,000 developers & designers sharing knowledge.</p>
+        </div>
+        <div class="achievement-card">
+          <div class="icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>Certified Web Developer</h3>
+          <p>Earned a certification from ACE Academy in [Web-Development] to enhance my skills.</p>
+
+        </div>
+        <div class="achievement-card">
+          <div class="icon"><i class="fas fa-lightbulb"></i></div>
+          <h3>Innovative Solutions</h3>
+          <p>Developed innovative web solutions that increased efficiency and user engagement.</p>
+        </div>
+        <div class="achievement-card">
+          <div class="icon"><i class="fas fa-rocket"></i></div>
+          <h3>Startup Success</h3>
+          <p>Contributed to multiple startups and helped in launching successful web applications.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================  SERVICES SECTION  ========================================== -->
+    <!-- Includes service name, description, and relevant icons.  -->
+    <section class="services" id="services">
+      <h2 class="section-title">What I Offer</h2>
+      <p class="section-subtitle">
+        Bringing ideas to life with creativity, innovation, and technical
+        expertise.
+      </p>
+      <div class="services-container">
+        <div class="service-card">
+          <div class="icon"><i class="fas fa-code"></i></div>
+          <h3>Full Stack Development</h3>
+          <p>
+            Building robust, scalable, and high-performance web applications
+            with a seamless user experience.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="icon"><i class="fas fa-paint-brush"></i></div>
+          <h3>Creative UI/UX Design</h3>
+          <p>
+            Designing modern, interactive, and user-centric digital experiences
+            that engage and inspire.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3>Mobile App Development</h3>
+          <p>
+            Creating high-quality, responsive, and dynamic mobile applications
+            tailored for various platforms.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="icon"><i class="fas fa-search"></i></div>
+          <h3>SEO & Digital Strategy</h3>
+          <p>
+            Optimizing websites for better search rankings, enhanced visibility,
+            and improved conversions.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="icon"><i class="fas fa-bullhorn"></i></div>
+          <h3>Branding & Marketing</h3>
+          <p>
+            Helping brands create a strong identity and execute result-driven
+            marketing strategies for growth.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="icon"><i class="fas fa-database"></i></div>
+          <h3>Database Management</h3>
+          <p>
+            Designing and managing databases to ensure data integrity, security,
+            and efficient performance.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ============= PROJECTS =================== -->
+    <!-- Includes project title, description, technologies used, and links.  -->
+    <section class="projects" id="projects">
+      <h2 class="section-title">My Projects</h2>
+      <p class="section-subtitle">A showcase of my best and most creative work.</p>
+
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Design</button>
+        <button class="filter-btn" data-filter="app">App Development</button>
+        <button class="filter-btn" data-filter="branding">Branding</button>
+      </div>
+
+      <div class="projects-container">
+        <div class="project-card" data-category="web">
+          <img src="Images/project1.PNG" alt="Web Design" />
+          <div class="overlay">
+            <h3>Modern Web Design</h3>
+            <p>Interactive & responsive UI with animations.</p>
+            <a href="#" class="view-btn">View Project</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="app">
+          <img src="Images/project2.jpg" alt="App Development" />
+          <div class="overlay">
+            <h3>Mobile App UI</h3>
+            <p>Creative and user-friendly mobile experience.</p>
+            <a href="#" class="view-btn">View Project</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="branding">
+          <img src="Images/project3.jpg" alt="Branding" />
+          <div class="overlay">
+            <h3>Brand Identity</h3>
+            <p>Professional branding and marketing strategies.</p>
+            <a href="#" class="view-btn">View Project</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web">
+          <img src="Images/project4.jpg" alt="Web Development" />
+          <div class="overlay">
+            <h3>E-Commerce Website</h3>
+            <p>Fully functional & optimized online store.</p>
+            <a href="#" class="view-btn">View Project</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="app">
+          <img src="Images/project5.jpg" alt="Finance App" />
+          <div class="overlay">
+            <h3>Finance Tracker App</h3>
+            <p>Manage expenses with a smooth UI/UX experience.</p>
+            <a href="#" class="view-btn">View Project</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="branding">
+          <img src="Images/project6.jpg" alt="Digital Marketing" />
+          <div class="overlay">
+            <h3>Digital Marketing Campaign</h3>
+            <p>Boost your brand with a professional marketing strategy.</p>
+            <a href="#" class="view-btn">View Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==========================  CONTACT SECTION  ======================================== -->
+    <!-- Includes a contact form, email, phone, and social media links.   -->
+    <section class="contact-section" id="contact">
+      <div class="contact-container">
+        <h2>Get in Touch</h2>
+        <p>Have a project in mind? Let's make something amazing together.</p>
+        <div class="contact-content">
+          <div class="contact-form">
+            <form>
+              <div class="input-group">
+                <input type="text" required />
+                <label>Your Name</label>
+              </div>
+              <div class="input-group">
+                <input type="email" required />
+                <label>Your Email</label>
+              </div>
+              <div class="input-group">
+                <textarea style="resize: none" required rows="5" cols="5"></textarea>
+                <label>Your Message</label>
+              </div>
+              <button type="submit" class="send-btn">Send Message</button>
+            </form>
+          </div>
+          <div class="contact-info">
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <p>eshadev25@gmail.com</p>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <p>+123 456 7890</p>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Zahir Pir, Pakistan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============= FOOTER ============== -->
+    <!-- Contains copyright information. -->
+    <footer class="footer">
+      <!-- Effects -->
+      <div class="context">
+      </div>
+      <div class="area">
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-logo">
+              <h2>Esha's Developer</h2>
+              <p>Creative Frontend & Full-Stack Developer</p>
+            </div>
+            <div class="footer-links">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">experience</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-social">
+              <h3>Follow Me</h3>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>© 2025 Esha's Developer. All Rights Reserved.</p>
+          </div>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>
